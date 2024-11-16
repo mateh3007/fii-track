@@ -7,7 +7,7 @@ type FiiProps = {
   userId: string;
 };
 
-export class UserEntity extends BaseEntity {
+export class FiiEntity extends BaseEntity {
   name: string;
   initialPurchaseValue: number;
   numberOfShares: number;
