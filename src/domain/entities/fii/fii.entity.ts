@@ -4,14 +4,14 @@ type FiiProps = {
   name: string;
   initialPurchaseValue: number;
   numberOfShares: number;
-  userId: string;
+  userId?: number;
 };
 
 export class FiiEntity extends BaseEntity {
   name: string;
   initialPurchaseValue: number;
   numberOfShares: number;
-  userId: string;
+  userId: number;
 
   constructor(fiiProps: FiiProps) {
     super();
