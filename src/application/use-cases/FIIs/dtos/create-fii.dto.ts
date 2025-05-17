@@ -43,12 +43,3 @@ export class CreateFiiDto {
   @IsNumber()
   userId?: number;
 }
-
-export type CreatedFiiDto = {
-  name: string;
-  initialPurchaseValue: number;
-  numberOfShares: number;
-  createdAt: Date;
-  updatedAt: Date;
-  deletedAt: Date | null;
-};

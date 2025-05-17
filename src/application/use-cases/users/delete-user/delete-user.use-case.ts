@@ -9,7 +9,7 @@ export class DeleteUserUseCase {
     const userAlreadyExists = await this.userRepository.findById(id);
 
     if (!userAlreadyExists) {
-      throw new NotFoundException('Company not found');
+      throw new NotFoundException('User not found');
     }
 
     return await this.userRepository.delete(userAlreadyExists.id);

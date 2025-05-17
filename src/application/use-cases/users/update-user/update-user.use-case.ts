@@ -13,7 +13,7 @@ export class UpdateUserUseCase {
 
     if (!userAlreadyExists) throw new NotFoundException('User not found');
     if (updateUserDto.password) {
-      updateUserDto.password = bcrypt.hash(updateUserDto.password, 10);
+      updateUserDto.password = await bcrypt.hash(updateUserDto.password, 10);
     }
 
     return await this.userRepository.update(userAlreadyExists.id, {

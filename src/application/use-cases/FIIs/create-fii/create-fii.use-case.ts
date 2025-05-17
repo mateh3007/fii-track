@@ -1,8 +1,9 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { IAlphaVantageRequest } from 'src/application/interfaces/external-requests/alpha-vantage.interface';
 import { IFiiRepository } from 'src/domain/interfaces/fii/fii.interface';
-import { CreatedFiiDto, CreateFiiDto } from '../dtos/create-fii.dto';
+import { CreateFiiDto } from '../dtos/create-fii.dto';
 import { FiiEntity } from 'src/domain/entities/fii/fii.entity';
+import { CreatedFiiDto } from '../dtos/created-fii.dto';
 
 @Injectable()
 export class CreateFiiUseCase {

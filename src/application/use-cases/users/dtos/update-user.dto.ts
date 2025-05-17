@@ -9,5 +9,5 @@ export class UpdateUserDto extends PickType(CreateUserDto, ['name', 'email']) {
   @IsString()
   @IsOptional()
   @MinLength(8)
-  password;
+  password: string;
 }
